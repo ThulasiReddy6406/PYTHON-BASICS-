@@ -1,0 +1,9 @@
+list  = [1,2,3,4,2,3,3,3,1,4,2,1,1,1]
+list_counter = {}
+
+for num in list:
+  list_counter[num] = list_counter.get(num, 0) + 1
+print(list_counter)
+
+result = max(list_counter , key=list_counter.get)
+print(result)
