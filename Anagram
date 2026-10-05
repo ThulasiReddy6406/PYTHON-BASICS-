@@ -1,0 +1,15 @@
+word1 = "silent"
+word2 = "listen"
+
+counter_1 = {}
+counter_2 = {}
+
+for ch in word1:
+  counter_1[ch] = counter_1.get(ch ,0) + 1
+for ch in word2:
+  counter_2[ch] = counter_2.get(ch ,0) + 1
+
+if counter_1 == counter_2:
+  print("Anagram")
+else:
+  print("Not Anagram")
